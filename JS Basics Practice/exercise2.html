@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Background</title>
+</head>
+<body>
+  <button id="toggleBtn">Toggle Background Color</button>
+
+  <script>
+    const button = document.getElementById("toggleBtn");
+
+    button.addEventListener("click", function(){
+
+        let bGround = document.body.style.backgroundColor = "black";
+        // if(bGround != "black"){
+        //     bGround = "white";
+        // }else{
+        //     bGround = "black";
+        // }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+These challenges were created by ChatGPT.
+
+
+Challenge 1: Filter Even Numbers and Double Them
+-------------------------------------------------
+Problem:
+Write a JavaScript code that takes an array of numbers as input. The function should:
+1. Use a loop (either for or while) to iterate through the array.
+2. Use a conditional statement to check if a number is even.
+3. If the number is even, double its value and store it in a new array.
+4. log the new array.
+
+Example Input:
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+Expected Output:
+[4, 8, 12, 16]
+
+-------------------------------------------------
+
+Challenge 2: Categorize Numbers into Even and Odd Arrays
+-------------------------------------------------
+Problem:
+Write a JavaScript code that takes an array of numbers as input. The function should:
+1. Use a loop (either for or while) to iterate through the array.
+2. Use conditionals to check if each number is even or odd.
+3. Store even numbers in one array and odd numbers in another.
+4. log an object containing both arrays.
+
+Example Input:
+[10, 15, 22, 33, 40, 55]
+
+Expected Output:
+{
+  even: [10, 22, 40],
+  odd: [15, 33, 55]
+}
+
+-------------------------------------------------
+
+Challenge 3: Find the Largest Number in an Array
+-------------------------------------------------
+Problem:
+Write a JavaScript code that takes an array of numbers as input. The function should:
+1. Use a loop (either for or while) to iterate through the array.
+2. Use a conditional statement to keep track of the largest number found.
+3. log the largest number.
+
+Example Input:
+[5, 12, 8, 20, 3, 25, 7]
+
+Expected Output:
+25
+
+-------------------------------------------------
+
+Challenge 4: Reverse a String
+-------------------------------------------------
+Problem:
+Write a JavaScript code that takes a string as input and logs the reversed version of the string.
+You must use a loop to iterate through the characters and construct the reversed string.
+
+Example Input:
+"hello"
+
+Expected Output:
+"olleh"
+
+-------------------------------------------------
+
+Challenge 5: Count Vowels in a String
+-------------------------------------------------
+Problem:
+Write a JavaScript code that takes a string as input and counts the number of vowels (a, e, i, o, u) in it.
+Log the count as an integer.
+
+Example Input:
+"javascript"
+
+Expected Output:
+3
+
+-------------------------------------------------
+
+Challenge 6: Capitalize the First Letter of Each Word
+-------------------------------------------------
+Problem:
+Write a JavaScript code that takes a sentence as input and capitalizes the first letter of each word.
+Log the modified string.
+
+Example Input:
+"hello world from javascript"
+
+Expected Output:
+"Hello World From JavaScript"
+
+-------------------------------------------------
+
+Challenge 7: Convert all challenges into functions
+-------------------------------------------------
+Problem:
+Convert all the javascript challenges into functions
+-------------------------------------------------
+
+Challenge 8: Use challenge functions in html
+-------------------------------------------------
+Problem:
+Output the challenge functions to a p tag in the relevant html. the html should also have an input 
+tag so that you can input the strings or arrays you want processed. The code should also check the types
+
+
+

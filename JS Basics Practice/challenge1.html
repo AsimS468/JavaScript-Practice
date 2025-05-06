@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Challenge 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2 { color: #333; }
+        h1 { border-bottom: 2px solid #333; padding-bottom: 5px; }
+        .challenge, .HTMLimp { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .instructions { background: #f9f9f9; padding: 10px; border-left: 5px solid #333; margin-top: 20px; }
+    </style>
+    <!-- <script src="challenge1.js" defer></script> -->
+</head>
+<body>
+
+    <h1>JavaScript Challenge 1</h1>
+    
+    <div class="challenge">
+        <h2>Challenge 1: Filter Even Numbers and Double Them</h2>
+        <p>Write a JavaScript function that takes an array of numbers as input. The function should:</p>
+        <ul>
+            <li>Use a loop (for or while) to iterate through the array.</li>
+            <li>Use a conditional statement to check if a number is even.</li>
+            <li>If the number is even, double its value and store it in a new array.</li>
+            <li>Return the new array.</li>
+        </ul>
+        <p><strong>Example Input:</strong> [1, 2, 3, 4, 5, 6, 7, 8]</p>
+        <p><strong>Expected Output:</strong> [4, 8, 12, 16]</p>
+    </div>
+
+    <div class="HTMLimp"> <!-- HTML implementation -->
+        <h2>HTML Implementation</h2>
+        <p><strong>Input a number to add to the array.</strong></p>
+        <input type="number" name="number" class="number" step="any"/>
+            <input type="submit" class="submit"/>
+        <p class="inpArr">Your Inputted Array is: <span id="inputArray"></span></p>
+        <p class="outArr">Your Outputted Array is: <span id="outputArray"></span></p>
+    </div>
+
+    <div class="instructions">
+        <h2>How to Access the JavaScript Console</h2>
+        <p>To run JavaScript, you need to open the developer console in your browser. Here's how to do it in different browsers:</p>
+        <ul>
+            <li><strong>Google Chrome:</strong> Press <code>Ctrl + Shift + J</code> (Windows/Linux) or <code>Cmd + Option + J</code> (Mac).</li>
+            <li><strong>Microsoft Edge:</strong> Press <code>Ctrl + Shift + J</code> (Windows/Linux) or <code>Cmd + Option + J</code> (Mac).</li>
+            <li><strong>Mozilla Firefox:</strong> Press <code>Ctrl + Shift + K</code> (Windows/Linux) or <code>Cmd + Option + K</code> (Mac).</li>
+            <li><strong>Safari:</strong> First, enable the Develop menu in Preferences > Advanced, then press <code>Cmd + Option + C</code>.</li>
+            <li><strong>Opera:</strong> Press <code>Ctrl + Shift + I</code> (Windows/Linux) or <code>Cmd + Option + I</code> (Mac) and go to the Console tab.</li>
+        </ul>
+        <p>Once the console is open, you can type JavaScript code and press Enter to execute it.</p>
+    </div>
+
+<script>
+    let mainArr = [];
+    let inputtedNum = document.getElementsByClassName("number"); //getting the value in the input field with the id 'number'
+    let submit = document.getElementsByClassName("submit"); 
+
+    let currArr = document.getElementsByClassName("inpArr")[0];
+
+    submit[0].addEventListener('click', function(){
+        mainArr.push(Number(inputtedNum[0].value));//Number() returns the value in a string as a numeric value
+        console.log(mainArr);
+
+        document.getElementById("inputArray").textContent = mainArr;
+        document.getElementById("outputArray").textContent = doubledEvens(mainArr);
+    });
+
+    //function to return the doubled array
+    function doubledEvens(arr){
+        let returnArr = [];
+        let i = 0;
+        while (i < arr.length){
+                if (arr[i] % 2 === 0){
+                returnArr.push(arr[i]*2);
+            }
+        i++;
+        }
+        return returnArr;
+    }
+
+    console.log(mainArr);
+</script>
+</body>
+</html>

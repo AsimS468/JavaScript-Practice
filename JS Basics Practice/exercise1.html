@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Text Change</title>
+</head>
+<body>
+  <p id="myParagraph">This is the original text.</p>
+  <button id="changeTextBtn">Click Me!</button>
+
+  <script>
+    let newText = "Hello DOM!";
+    const button = document.getElementById("changeTextBtn"); //declare the button as a variable
+
+    button.addEventListener("click", function() {
+        document.getElementById("myParagraph").textContent = newText;
+    });
+
+  </script>
+</body>
+</html>
